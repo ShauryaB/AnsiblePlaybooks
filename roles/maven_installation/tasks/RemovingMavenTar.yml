@@ -1,0 +1,5 @@
+---
+- name: remove Tar
+  file:
+    path: /data/apache-maven/3.2.5
+    state: absent

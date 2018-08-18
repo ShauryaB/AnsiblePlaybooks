@@ -1,0 +1,5 @@
+---
+- name: maven input configuration in m2 folder 
+  template:
+     src: settings.xml.j2
+     dest: "/home/user/.m2/settings.xml"

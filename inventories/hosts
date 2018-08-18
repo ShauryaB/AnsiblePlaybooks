@@ -1,0 +1,8 @@
+[Target_nodes]
+localhost
+rt ansible_host=localhost vmname=shaurya1
+#rt_2 ansible_host=locahost vmname2=shaurya12342353461
+
+[Target_nodes:vars]
+#rt3=shaurya
+

@@ -1,0 +1,13 @@
+---
+- name: include all tasks    
+  block:
+   - include_tasks: "createDirectory.yml"
+   - include_tasks: "downloadTomcatPackage.yml"
+   - include_tasks: "untarTomcatPackage.yml"  
+   - include_tasks: "changeOwnership.yml"
+   - include_tasks: "removeTomcatPackage.yml"
+  become: true
+  become_user: user
+- name: command running
+  command: systemctl status tomcat
+  

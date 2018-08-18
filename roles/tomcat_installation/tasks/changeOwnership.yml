@@ -1,0 +1,6 @@
+- name: change ownership of "{{ tomcat_installation_directory }}"
+  file:
+    path: "{{ tomcat_installation_directory }}"
+    owner: "{{ user_name }}"
+    group: "{{ group_name }}"
+    recurse: yes    

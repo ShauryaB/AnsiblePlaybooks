@@ -1,0 +1,8 @@
+---
+- name: Setting of maven_home variables in .bashrc
+  blockinfile:
+       path: "/home/user/.bashrc"
+       block: |
+               export MAVEN_HOME=/data/apache-maven/3.2.5/apache-maven-3.2.5
+               export PATH=$MAVEN_HOME/$JAVA_HOME/bin:$PATH
+               #export JAVA_HOME=/data/Java/1.8.0_131/jdk1.8.0_131

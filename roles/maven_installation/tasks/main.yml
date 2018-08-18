@@ -1,0 +1,17 @@
+---
+- name: Maven installation
+  block: 
+      - include_tasks: CreateMavenFolder.yml
+      - include_tasks: CreateM2Folder.yml
+      - include_tasks: DownloadMavenTar.yml
+      - include_tasks: UnzipMavenTar.yml
+#      - include_tasks: RemovingMavenTar.yml
+      - include_tasks: InputConfiguration.yml
+      - include_tasks: ChangeOwnership.yml  
+
+
+  become: true
+  become_user: user
+- include_tasks: SettingUpEnv.yml
+#- include_tasks: CheckingInstallation.yml   
+

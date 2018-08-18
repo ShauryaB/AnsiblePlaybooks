@@ -1,0 +1,7 @@
+- name: Create Directory
+  file:
+      path: /data/java
+      recurse: yes
+      state: directory
+  become: true
+  become_user: user

@@ -1,0 +1,8 @@
+- name: set up permissions & Set Environment
+  file:
+       dest: /data/apache-maven/3.2.5/
+       owner: user
+       group: user
+       mode: 0777
+  become: true
+  become_user: root   

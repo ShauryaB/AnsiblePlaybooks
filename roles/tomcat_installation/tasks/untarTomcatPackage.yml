@@ -1,0 +1,7 @@
+- name: untar nexus
+  unarchive:
+    src: "{{ tomcat_installation_directory }}/{{ tomcat_version }}/tomcat-{{ tomcat_version }}.tar.gz"
+    dest: "{{ tomcat_installation_directory }}{{ tomcat_version }}"
+    remote_src: yes
+
+

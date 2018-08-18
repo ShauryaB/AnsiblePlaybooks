@@ -1,0 +1,6 @@
+- name: Create Directory
+  file:
+      path: /data/apache-maven/3.2.5 
+      recurse: yes
+      state: directory
+      

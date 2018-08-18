@@ -1,0 +1,4 @@
+[Target_nodes]
+localhost
+#rt ansible_host=localhost vmname=shaurya1
+

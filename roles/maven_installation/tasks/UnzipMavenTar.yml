@@ -1,0 +1,5 @@
+- name: untar maven
+  unarchive:
+             src: /data/apache-maven/3.2.5/apache-maven-3.2.5-bin.tar.gz
+             dest: /data/apache-maven/3.2.5
+

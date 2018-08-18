@@ -1,0 +1,5 @@
+- name: download nexus
+  get_url:
+     url: "{{ tomcat_download_url }}"
+     dest: "{{ tomcat_installation_directory }}{{ tomcat_version }}"
+

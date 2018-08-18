@@ -1,0 +1,5 @@
+- name: download maven tar
+  get_url:
+         url: "http://www-us.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz"
+         dest: /data/apache-maven/3.2.5
+         headers: 'Cookie: oraclelicense=accept-securebackup-cookie'

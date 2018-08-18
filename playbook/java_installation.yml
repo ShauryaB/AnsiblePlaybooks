@@ -1,0 +1,6 @@
+---
+- name: setup java
+  hosts: all
+  roles:
+    - roles/java_installation    
+
